@@ -1,0 +1,7 @@
+crewai 
+crewai-tools
+ipykernel
+torch
+matplotlib
+python-dotenv
+setuptools
