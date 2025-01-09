@@ -33,26 +33,37 @@ table_generation:
 
 chart_generation:
   description: >
-    Generate charts based on the tables provided by the previous task. The
-    charts should include:
-    - Issue Distribution: A chart showing the distribution of different issue
-      types.
-    - Priority Levels: A chart depicting the breakdown of tickets by priority
-      level.
-    - Resolution Times: A trend line showing average resolution times over the
-      past months.
-    - Customer Satisfaction: A bar chart or trend line showing customer
-      satisfaction ratings over time.
-    - Agent Performance: A chart showing the performance of different agents
-      based on resolution times and customer satisfaction scores.
-
-    Save the charts as image files in the current directory.
-
-    Ensure that the charts are saved as image files, and generate URLs for these
-    images so they can be easily embedded into the final report.
+    Generate professional-quality charts using Python visualization libraries
+    (matplotlib, seaborn, or plotly) based on the provided data. Create:
+    
+    1. Issue Distribution: Bar chart showing issue type distribution
+    2. Priority Levels: Bar chart showing priority distribution
+    
+    Sample code structure:
+    ```python
+    # For Issue Distribution
+    issue_data = {
+        'Issue Type': ['API Issue', 'Login Issue', 'Report Generation', 
+                      'Data Import', 'Feature Request', 'Billing Issue', 'UI Bug'],
+        'Frequency': [8, 8, 6, 12, 9, 11, 6]
+    }
+    
+    # For Priority Levels
+    priority_data = {
+        'Priority Level': ['High', 'Medium', 'Critical', 'Low'],
+        'Count': [24, 15, 8, 13]  # Pre-calculated totals
+    }
+    ```
+    
+    Requirements:
+    - Use simple bar charts for clear visualization
+    - Include proper titles, labels, and legends
+    - Use appropriate color schemes
+    - Save charts as PNG files
+    - Ensure consistent sizing and formatting
   expected_output: >
-    A set of charts that visually represent the key metrics and trends observed
-    in the support data, ready to be integrated into the final report.
+    A set of professionally formatted charts saved as PNG files, with clear
+    visualization of issue distribution and priority levels.
 
 final_report_assembly:
   description: >
