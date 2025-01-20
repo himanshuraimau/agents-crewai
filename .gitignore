@@ -1,3 +1,6 @@
 agents-crewai/
 .env
 __pycache__
+crew/
+db/
+logs/

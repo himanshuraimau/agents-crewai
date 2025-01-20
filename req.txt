@@ -5,3 +5,4 @@ torch
 matplotlib
 python-dotenv
 setuptools
+snowflake-connector-python
